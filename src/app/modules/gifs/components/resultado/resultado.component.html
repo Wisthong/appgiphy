@@ -1,0 +1,23 @@
+<!-- <ul>
+  <li *ngFor="let item of resultados">
+    {{item.title | titlecase}}
+  </li>
+</ul>
+ -->
+
+<div class="row">
+  <div class="col-md-4 col-sm-6" *ngFor="let item of resultados">
+    <div class="card">
+      <img
+        [src]="item.images.downsized_medium.url "
+        [alt]="item.title"
+        class="card-img-top animate__animated animate__fadeIn animate__repeat-2"
+      />
+      <div class="card-body">
+        <p class="card-text text-center">
+          {{ item.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
