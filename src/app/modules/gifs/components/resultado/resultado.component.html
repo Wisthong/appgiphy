@@ -6,16 +6,16 @@
  -->
 
 <div class="row">
-  <div class="col-md-4 col-sm-6" *ngFor="let item of resultados">
+  <div class="col-md-4 col-sm-6 py-2" *ngFor="let item of resultados">
     <div class="card">
       <img
-        [src]="item.images.downsized_medium.url "
+        [src]="item.images.downsized_medium.url"
         [alt]="item.title"
         class="card-img-top animate__animated animate__fadeIn animate__repeat-2"
       />
       <div class="card-body">
-        <p class="card-text text-center">
-          {{ item.title }}
+        <p class="card-text text-center fw-bolder">
+          {{ item.title | titlecase }}
         </p>
       </div>
     </div>

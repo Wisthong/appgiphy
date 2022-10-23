@@ -19,9 +19,8 @@ export class BusquedaComponent {
     if (value.trim().length === 0) {
       return;
     }
-    this.gifsSvc.buscarGifs(value.trim().toLowerCase()).subscribe((resOk)=>{
-      console.log(resOk);
-
+    this.gifsSvc.buscarGifs(value.trim().toLowerCase()).subscribe((resOk) => {
+      // console.log(resOk);
     });
     this.txtBuscar.nativeElement.value = '';
   }

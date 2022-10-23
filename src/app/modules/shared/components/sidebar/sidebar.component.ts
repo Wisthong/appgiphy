@@ -15,7 +15,6 @@ export class SidebarComponent {
 
   buscar(item: string) {
     this.gifsSvc.buscarGifs(item).subscribe((resOk) => {
-      console.log('Todo salio bien', resOk);
     });
   }
 }
